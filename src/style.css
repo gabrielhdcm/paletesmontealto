@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Manrope', sans-serif;
+  --font-display: 'Sora', sans-serif;
+  --color-brand-wood: #8b4513;
+  --color-brand-green: #228b22;
+  --color-brand-accent: #d97706;
+  --color-brand-ink: #1f2937;
+  --color-brand-surface: #f8fafc;
+}
+
+:root {
+  font-family: var(--font-sans);
+  color: #1f2937;
+  background:
+    radial-gradient(circle at top left, rgba(34, 139, 34, 0.12), transparent 24%),
+    radial-gradient(circle at top right, rgba(217, 119, 6, 0.18), transparent 28%),
+    #f8fafc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+::selection {
+  background: rgba(217, 119, 6, 0.2);
+  color: #1f2937;
+}
+
+/* Banner responsivo: mobile usa banner-principal-mobile.jpg, desktop usa banner-principal.jpg */
+.hero-bg {
+  background-image:
+    linear-gradient(180deg, rgba(17,24,39,0.82) 0%, rgba(31,41,55,0.72) 48%, rgba(36,50,71,0.78) 100%),
+    url(/banner-principal-mobile.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 640px) {
+  .hero-bg {
+    background-image:
+      linear-gradient(180deg, rgba(17,24,39,0.82) 0%, rgba(31,41,55,0.72) 48%, rgba(36,50,71,0.78) 100%),
+      url(/banner-principal.jpg);
+  }
+}
