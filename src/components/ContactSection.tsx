@@ -89,7 +89,7 @@ export function ContactSection() {
 
               <button
                 type="submit"
-                className="inline-flex items-center justify-center rounded-lg bg-[linear-gradient(135deg,#0E2A88,#2450C8)] px-5 py-3.5 text-sm font-semibold text-white shadow-[0_18px_30px_rgba(14,42,136,0.24)]"
+                className="inline-flex items-center justify-center rounded-lg bg-[#F3D31B] px-5 py-3.5 text-sm font-semibold text-[#0E2A88] shadow-[0_18px_30px_rgba(243,211,27,0.32)] hover:bg-[#e7c814]"
               >
                 Enviar solicitação
               </button>
@@ -100,7 +100,7 @@ export function ContactSection() {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-md bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-800"
+                className="rounded-md bg-[#F3D31B] px-4 py-2 text-sm font-semibold text-[#0E2A88] hover:bg-[#e7c814]"
               >
                 WhatsApp comercial
               </a>

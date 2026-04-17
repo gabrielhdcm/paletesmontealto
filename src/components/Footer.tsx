@@ -73,7 +73,7 @@ export function Footer() {
                   href={whatsappUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center justify-center rounded-lg bg-[linear-gradient(135deg,#0E2A88,#2450C8)] px-4 py-3 text-sm font-semibold text-white"
+                  className="inline-flex items-center justify-center rounded-lg bg-[#F3D31B] px-4 py-3 text-sm font-semibold text-[#0E2A88] hover:bg-[#e7c814]"
                 >
                   Solicitar orçamento pelo WhatsApp
                 </a>

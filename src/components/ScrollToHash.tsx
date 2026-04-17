@@ -19,7 +19,7 @@ export function ScrollToHash() {
     }, 80)
 
     return () => window.clearTimeout(timer)
-  }, [location.hash, location.pathname])
+  }, [location.hash, location.pathname, location.search])
 
   return null
 }

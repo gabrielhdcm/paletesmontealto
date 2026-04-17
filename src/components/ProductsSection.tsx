@@ -1,13 +1,27 @@
 import { motion } from 'framer-motion'
 import { ArrowUpRight, SlidersHorizontal } from 'lucide-react'
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
+import { useLocation } from 'react-router-dom'
 import { productCategories, products, type Product, type ProductCategory } from '../data/siteContent'
 import { ProductModal } from './ProductModal'
 import { SectionHeading } from './SectionHeading'
 
 export function ProductsSection() {
+  const location = useLocation()
   const [category, setCategory] = useState<ProductCategory>('todos')
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null)
+
+  useEffect(() => {
+    const rawCategory = new URLSearchParams(location.search).get('categoria')
+    const hasCategory = productCategories.some((item) => item.value === rawCategory)
+
+    if (hasCategory) {
+      setCategory(rawCategory as ProductCategory)
+      return
+    }
+
+    setCategory('todos')
+  }, [location.search])
 
   const filteredProducts = useMemo(() => {
     if (category === 'todos') {
@@ -38,7 +52,7 @@ export function ProductsSection() {
                   onClick={() => setCategory(item.value)}
                   className={`rounded-lg px-4 py-3 text-sm font-semibold whitespace-nowrap transition ${
                     category === item.value
-                      ? 'bg-[linear-gradient(135deg,#0E2A88,#2450C8)] text-white shadow-lg shadow-blue-900/20'
+                      ? 'bg-[#F3D31B] text-[#0E2A88] shadow-[0_10px_22px_rgba(243,211,27,0.32)]'
                       : 'text-slate-600 hover:bg-slate-100'
                   }`}
                 >
@@ -76,7 +90,7 @@ export function ProductsSection() {
                 <button
                   type="button"
                   onClick={() => setSelectedProduct(product)}
-                  className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-[color:#0E2A88] sm:mt-5"
+                  className="mt-3 inline-flex items-center gap-2 rounded-md border border-[#0E2A88]/20 px-3 py-2 text-sm font-semibold text-[#0E2A88] transition hover:border-[#0E2A88]/40 hover:bg-[#0E2A88]/5 sm:mt-5"
                 >
                   Saiba Mais
                   <ArrowUpRight className="h-4 w-4" />
@@ -85,6 +99,12 @@ export function ProductsSection() {
             </motion.article>
           ))}
         </div>
+
+        {filteredProducts.length === 0 ? (
+          <div className="mt-8 rounded-md border border-slate-200 bg-white p-6 text-sm text-slate-600">
+            Nenhum produto encontrado para esta categoria no momento.
+          </div>
+        ) : null}
       </div>
 
       <ProductModal product={selectedProduct} onClose={() => setSelectedProduct(null)} />

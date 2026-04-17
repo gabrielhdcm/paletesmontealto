@@ -319,9 +319,9 @@ export const footerLinks: Array<{ title: string; items: Array<{ label: string; h
   {
     title: 'Produtos',
     items: [
-      { label: 'Paletes retornáveis', href: '/#produtos' },
-      { label: 'Paletes descartáveis', href: '/#produtos' },
-      { label: 'Embalagens personalizadas', href: '/#produtos' },
+      { label: 'Paletes retornáveis', href: '/?categoria=retornaveis#produtos' },
+      { label: 'Paletes descartáveis', href: '/?categoria=descartaveis#produtos' },
+      { label: 'Embalagens personalizadas', href: '/?categoria=personalizados#produtos' },
     ],
   },
 ]

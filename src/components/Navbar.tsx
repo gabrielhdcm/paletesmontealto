@@ -8,23 +8,23 @@ export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 px-4 pt-4 sm:px-6 lg:px-8">
-      <div className="mx-auto flex max-w-7xl items-center justify-between rounded-xl border border-white/50 bg-white/80 px-4 py-3 shadow-[0_18px_60px_rgba(15,23,42,0.12)] backdrop-blur-xl sm:px-6">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-[#dbe3fb] bg-white/95 backdrop-blur-xl">
+      <div className="flex h-20 w-full items-center justify-between px-4 sm:px-6 lg:px-10">
         <Link to="/#inicio" className="flex items-center">
           {/* PLACEHOLDER: troque por /public/logopma.png caso altere o arquivo de logo */}
           <img
             src="/logopma.png"
             alt="Logo Paletes Monte Alto"
-            className="h-12 w-auto rounded-md object-contain sm:h-14"
+            className="h-11 w-auto object-contain sm:h-12"
           />
         </Link>
 
-        <nav className="hidden items-center gap-8 lg:flex">
+        <nav className="hidden items-center gap-10 lg:flex">
           {navigationItems.map((item) => (
             <Link
               key={item.href}
               to={item.href}
-              className="text-sm font-semibold text-slate-600 transition hover:text-[color:#0E2A88]"
+              className="font-display text-lg font-semibold tracking-[0.01em] text-slate-700 transition hover:text-[color:#0E2A88]"
             >
               {item.label}
             </Link>
@@ -36,7 +36,7 @@ export function Navbar() {
             href={whatsappUrl}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-lg bg-[linear-gradient(135deg,#0E2A88,#2450C8)] px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-900/25 transition hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 rounded-lg bg-[#F3D31B] px-6 py-3 text-base font-semibold text-[#0E2A88] shadow-[0_12px_24px_rgba(243,211,27,0.35)] transition hover:-translate-y-0.5 hover:bg-[#e7c814]"
           >
             <Phone className="h-4 w-4" />
             WhatsApp
@@ -59,7 +59,7 @@ export function Navbar() {
             initial={{ opacity: 0, y: -12 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -12 }}
-            className="mx-auto mt-3 max-w-7xl rounded-md border border-white/60 bg-white/95 p-4 shadow-[0_24px_60px_rgba(15,23,42,0.14)] backdrop-blur lg:hidden"
+            className="border-t border-[#dbe3fb] bg-white px-4 pb-4 pt-3 shadow-[0_16px_36px_rgba(15,23,42,0.1)] lg:hidden"
           >
             <div className="flex flex-col gap-2">
               {navigationItems.map((item) => (
@@ -67,7 +67,7 @@ export function Navbar() {
                   key={item.href}
                   to={item.href}
                   onClick={() => setMenuOpen(false)}
-                  className="rounded-lg px-4 py-3 text-sm font-semibold text-slate-700 transition hover:bg-stone-100 hover:text-[color:#0E2A88]"
+                  className="rounded-lg px-4 py-3 font-display text-base font-semibold tracking-[0.01em] text-slate-700 transition hover:bg-stone-100 hover:text-[color:#0E2A88]"
                 >
                   {item.label}
                 </Link>
@@ -76,7 +76,7 @@ export function Navbar() {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="mt-2 inline-flex items-center justify-center gap-2 rounded-lg bg-[linear-gradient(135deg,#0E2A88,#2450C8)] px-4 py-3 text-sm font-semibold text-white"
+                className="mt-2 inline-flex items-center justify-center gap-2 rounded-lg bg-[#F3D31B] px-4 py-3 text-sm font-semibold text-[#0E2A88] hover:bg-[#e7c814]"
               >
                 <Phone className="h-4 w-4" />
                 Falar no WhatsApp

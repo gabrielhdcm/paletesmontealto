@@ -137,7 +137,7 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
 
                 <button
                   type="submit"
-                  className="mt-5 inline-flex w-full items-center justify-center rounded-lg bg-[linear-gradient(135deg,#0E2A88,#2450C8)] px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-900/20"
+                  className="mt-5 inline-flex w-full items-center justify-center rounded-lg bg-[#F3D31B] px-4 py-3 text-sm font-semibold text-[#0E2A88] shadow-[0_12px_24px_rgba(243,211,27,0.32)] hover:bg-[#e7c814]"
                 >
                   Enviar interesse
                 </button>
