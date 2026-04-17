@@ -38,7 +38,7 @@ export function ProductsSection() {
                   onClick={() => setCategory(item.value)}
                   className={`rounded-lg px-4 py-3 text-sm font-semibold whitespace-nowrap transition ${
                     category === item.value
-                      ? 'bg-[linear-gradient(135deg,#8B4513,#D97706)] text-white shadow-lg shadow-amber-700/20'
+                      ? 'bg-[linear-gradient(135deg,#0E2A88,#2450C8)] text-white shadow-lg shadow-blue-900/20'
                       : 'text-slate-600 hover:bg-slate-100'
                   }`}
                 >
@@ -76,7 +76,7 @@ export function ProductsSection() {
                 <button
                   type="button"
                   onClick={() => setSelectedProduct(product)}
-                  className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-[color:#8B4513] sm:mt-5"
+                  className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-[color:#0E2A88] sm:mt-5"
                 >
                   Saiba Mais
                   <ArrowUpRight className="h-4 w-4" />

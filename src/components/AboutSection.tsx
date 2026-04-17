@@ -18,8 +18,8 @@ export function AboutSection() {
           transition={{ duration: 0.45 }}
           className="relative"
         >
-          <div className="absolute -left-6 -top-6 h-40 w-40 rounded-full bg-emerald-500/18 blur-3xl" />
-          <div className="absolute -bottom-8 right-8 h-40 w-40 rounded-full bg-amber-500/25 blur-3xl" />
+          <div className="absolute -left-6 -top-6 h-40 w-40 rounded-full bg-blue-500/20 blur-3xl" />
+          <div className="absolute -bottom-8 right-8 h-40 w-40 rounded-full bg-yellow-400/30 blur-3xl" />
 
           <div className="relative overflow-hidden rounded-md border border-slate-200 bg-white p-3 shadow-[0_30px_85px_rgba(31,41,55,0.18)]">
             <img
@@ -29,7 +29,7 @@ export function AboutSection() {
             />
 
             <div className="absolute inset-x-6 bottom-6 rounded-lg border border-white/25 bg-slate-950/55 px-4 py-3 backdrop-blur-sm">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-300">Estrutura industrial</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-yellow-300">Estrutura industrial</p>
               <p className="mt-1 font-display text-xl text-white">Paletes Monte Alto</p>
             </div>
           </div>
@@ -69,7 +69,7 @@ export function AboutSection() {
         className="mt-6 grid gap-3 sm:mt-8 sm:gap-4 sm:grid-cols-3"
       >
             <div className="flex h-full items-start gap-3 rounded-lg border border-slate-200 bg-white p-4 shadow-[0_8px_20px_rgba(31,41,55,0.06)] sm:gap-4 sm:p-6">
-              <div className="shrink-0 rounded-lg bg-amber-100/80 p-2 text-amber-800 sm:p-3">
+              <div className="shrink-0 rounded-lg bg-yellow-100/85 p-2 text-yellow-800 sm:p-3">
                 <CalendarRange className="h-4 w-4 sm:h-5 sm:w-5" />
               </div>
               <div>
@@ -81,7 +81,7 @@ export function AboutSection() {
             </div>
 
             <div className="flex h-full items-start gap-3 rounded-lg border border-slate-200 bg-white p-4 shadow-[0_8px_20px_rgba(31,41,55,0.06)] sm:gap-4 sm:p-6">
-              <div className="shrink-0 rounded-lg bg-emerald-100/80 p-2 text-emerald-800 sm:p-3">
+              <div className="shrink-0 rounded-lg bg-blue-100/85 p-2 text-blue-800 sm:p-3">
                 <Building2 className="h-4 w-4 sm:h-5 sm:w-5" />
               </div>
               <div>

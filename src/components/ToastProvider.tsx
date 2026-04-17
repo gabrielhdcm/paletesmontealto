@@ -52,10 +52,10 @@ export function ToastProvider({ children }: PropsWithChildren) {
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 exit={{ opacity: 0, y: -10, scale: 0.96 }}
                 transition={{ duration: 0.24, ease: 'easeOut' }}
-                className="pointer-events-auto rounded-lg border border-amber-200/60 bg-white/95 p-4 shadow-[0_20px_50px_rgba(31,41,55,0.16)] backdrop-blur"
+                className="pointer-events-auto rounded-lg border border-blue-200/70 bg-white/95 p-4 shadow-[0_20px_50px_rgba(31,41,55,0.16)] backdrop-blur"
               >
                 <div className="flex items-start gap-3">
-                  <div className="mt-0.5 rounded-full bg-emerald-100 p-2 text-emerald-700">
+                  <div className="mt-0.5 rounded-full bg-yellow-100 p-2 text-blue-700">
                     <CheckCircle2 className="h-5 w-5" />
                   </div>
                   <div className="flex-1">

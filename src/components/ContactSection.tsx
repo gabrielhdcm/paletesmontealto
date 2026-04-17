@@ -49,14 +49,14 @@ export function ContactSection() {
                   value={formData.name}
                   onChange={(event) => setFormData((current) => ({ ...current, name: event.target.value }))}
                   placeholder="Nome"
-                  className="rounded-lg border border-slate-200 px-4 py-3 text-sm outline-none transition focus:border-amber-700"
+                  className="rounded-lg border border-slate-200 px-4 py-3 text-sm outline-none transition focus:border-blue-700"
                 />
                 <input
                   required
                   value={formData.company}
                   onChange={(event) => setFormData((current) => ({ ...current, company: event.target.value }))}
                   placeholder="Empresa"
-                  className="rounded-lg border border-slate-200 px-4 py-3 text-sm outline-none transition focus:border-amber-700"
+                  className="rounded-lg border border-slate-200 px-4 py-3 text-sm outline-none transition focus:border-blue-700"
                 />
               </div>
 
@@ -67,14 +67,14 @@ export function ContactSection() {
                   value={formData.email}
                   onChange={(event) => setFormData((current) => ({ ...current, email: event.target.value }))}
                   placeholder="E-mail"
-                  className="rounded-lg border border-slate-200 px-4 py-3 text-sm outline-none transition focus:border-amber-700"
+                  className="rounded-lg border border-slate-200 px-4 py-3 text-sm outline-none transition focus:border-blue-700"
                 />
                 <input
                   required
                   value={formData.phone}
                   onChange={(event) => setFormData((current) => ({ ...current, phone: event.target.value }))}
                   placeholder="Telefone"
-                  className="rounded-lg border border-slate-200 px-4 py-3 text-sm outline-none transition focus:border-amber-700"
+                  className="rounded-lg border border-slate-200 px-4 py-3 text-sm outline-none transition focus:border-blue-700"
                 />
               </div>
 
@@ -84,12 +84,12 @@ export function ContactSection() {
                 value={formData.message}
                 onChange={(event) => setFormData((current) => ({ ...current, message: event.target.value }))}
                 placeholder="Descreva o tipo de palete, embalagem ou demanda logística"
-                className="rounded-lg border border-slate-200 px-4 py-3 text-sm outline-none transition focus:border-amber-700"
+                className="rounded-lg border border-slate-200 px-4 py-3 text-sm outline-none transition focus:border-blue-700"
               />
 
               <button
                 type="submit"
-                className="inline-flex items-center justify-center rounded-lg bg-[linear-gradient(135deg,#8B4513,#D97706)] px-5 py-3.5 text-sm font-semibold text-white shadow-[0_18px_30px_rgba(139,69,19,0.24)]"
+                className="inline-flex items-center justify-center rounded-lg bg-[linear-gradient(135deg,#0E2A88,#2450C8)] px-5 py-3.5 text-sm font-semibold text-white shadow-[0_18px_30px_rgba(14,42,136,0.24)]"
               >
                 Enviar solicitação
               </button>
@@ -100,7 +100,7 @@ export function ContactSection() {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-md bg-emerald-100 px-4 py-2 text-sm font-semibold text-emerald-800"
+                className="rounded-md bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-800"
               >
                 WhatsApp comercial
               </a>
@@ -124,7 +124,7 @@ export function ContactSection() {
               <div className="grid gap-5 sm:grid-cols-2">
                 <div className="rounded-lg bg-stone-50 p-5">
                   <div className="flex items-center gap-3">
-                    <div className="rounded-lg bg-amber-100 p-3 text-amber-800">
+                    <div className="rounded-lg bg-yellow-100 p-3 text-yellow-800">
                       <Phone className="h-5 w-5" />
                     </div>
                     <div>
@@ -136,7 +136,7 @@ export function ContactSection() {
 
                 <div className="rounded-lg bg-stone-50 p-5">
                   <div className="flex items-center gap-3">
-                    <div className="rounded-lg bg-emerald-100 p-3 text-emerald-800">
+                    <div className="rounded-lg bg-blue-100 p-3 text-blue-800">
                       <Mail className="h-5 w-5" />
                     </div>
                     <div>

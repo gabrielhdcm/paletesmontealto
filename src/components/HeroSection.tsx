@@ -20,8 +20,8 @@ export function HeroSection() {
           transition={{ duration: 0.55, ease: 'easeOut' }}
           className="relative z-10"
         >
-          <div className="inline-flex items-center gap-2 rounded-md border border-amber-200 bg-amber-50/90 px-4 py-2 text-sm font-semibold text-amber-900">
-            <BadgeCheck className="h-4 w-4 text-amber-700" />
+          <div className="inline-flex items-center gap-2 rounded-md border border-yellow-300 bg-yellow-100/90 px-4 py-2 text-sm font-semibold text-blue-900">
+            <BadgeCheck className="h-4 w-4 text-[color:#0E2A88]" />
             Fabricante de paletes e embalagens de madeira em Monte Alto - SP
           </div>
 
@@ -34,7 +34,7 @@ export function HeroSection() {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
               to="/#produtos"
-              className="inline-flex items-center justify-center gap-2 rounded-lg bg-[linear-gradient(135deg,#D97706,#f2a532)] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_18px_30px_rgba(217,119,6,0.35)] transition hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center gap-2 rounded-lg bg-[linear-gradient(135deg,#0E2A88,#2450C8)] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_18px_30px_rgba(14,42,136,0.35)] transition hover:-translate-y-0.5"
             >
               Ver Produtos
               <ArrowRight className="h-4 w-4" />

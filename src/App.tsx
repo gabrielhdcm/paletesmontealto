@@ -13,8 +13,8 @@ import { WhatsAppButton } from './components/WhatsAppButton'
 
 function LandingPage() {
   return (
-    <div className="relative min-h-screen overflow-x-clip bg-stone-950 text-slate-900">
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-[36rem] bg-[radial-gradient(circle_at_top_right,_rgba(217,119,6,0.2),_transparent_32%),radial-gradient(circle_at_top_left,_rgba(34,139,34,0.18),_transparent_28%)]" />
+    <div className="relative min-h-screen overflow-x-clip bg-[#06163f] text-slate-900">
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-[36rem] bg-[radial-gradient(circle_at_top_right,_rgba(243,211,27,0.22),_transparent_34%),radial-gradient(circle_at_top_left,_rgba(14,42,136,0.24),_transparent_30%)]" />
       <ScrollToHash />
       <ToastProvider>
         <Navbar />

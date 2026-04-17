@@ -24,7 +24,7 @@ export function Navbar() {
             <Link
               key={item.href}
               to={item.href}
-              className="text-sm font-semibold text-slate-600 transition hover:text-[color:#8B4513]"
+              className="text-sm font-semibold text-slate-600 transition hover:text-[color:#0E2A88]"
             >
               {item.label}
             </Link>
@@ -36,7 +36,7 @@ export function Navbar() {
             href={whatsappUrl}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-lg bg-[linear-gradient(135deg,#228B22,#2fb14b)] px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-emerald-900/20 transition hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 rounded-lg bg-[linear-gradient(135deg,#0E2A88,#2450C8)] px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-900/25 transition hover:-translate-y-0.5"
           >
             <Phone className="h-4 w-4" />
             WhatsApp
@@ -67,7 +67,7 @@ export function Navbar() {
                   key={item.href}
                   to={item.href}
                   onClick={() => setMenuOpen(false)}
-                  className="rounded-lg px-4 py-3 text-sm font-semibold text-slate-700 transition hover:bg-stone-100 hover:text-[color:#8B4513]"
+                  className="rounded-lg px-4 py-3 text-sm font-semibold text-slate-700 transition hover:bg-stone-100 hover:text-[color:#0E2A88]"
                 >
                   {item.label}
                 </Link>
@@ -76,7 +76,7 @@ export function Navbar() {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="mt-2 inline-flex items-center justify-center gap-2 rounded-lg bg-[linear-gradient(135deg,#228B22,#2fb14b)] px-4 py-3 text-sm font-semibold text-white"
+                className="mt-2 inline-flex items-center justify-center gap-2 rounded-lg bg-[linear-gradient(135deg,#0E2A88,#2450C8)] px-4 py-3 text-sm font-semibold text-white"
               >
                 <Phone className="h-4 w-4" />
                 Falar no WhatsApp

@@ -26,7 +26,7 @@ export function DifferentialsSection() {
                 transition={{ duration: 0.34, delay: index * 0.05 }}
                 className="rounded-md border border-slate-200 bg-white p-6 shadow-[0_18px_40px_rgba(15,23,42,0.06)]"
               >
-                <div className="inline-flex rounded-lg bg-[linear-gradient(135deg,rgba(139,69,19,0.14),rgba(34,139,34,0.14))] p-3 text-[color:#8B4513]">
+                <div className="inline-flex rounded-lg bg-[linear-gradient(135deg,rgba(14,42,136,0.14),rgba(243,211,27,0.2))] p-3 text-[color:#0E2A88]">
                   <Icon className="h-6 w-6" />
                 </div>
                 <h3 className="mt-5 font-display text-2xl text-slate-900">{item.title}</h3>

@@ -16,7 +16,7 @@ function createPlaceholderDataUri(title: string, subtitle: string, accent: strin
       <defs>
         <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
           <stop stop-color="#1F2937" />
-          <stop offset="0.55" stop-color="#8B4513" />
+          <stop offset="0.55" stop-color="#0E2A88" />
           <stop offset="1" stop-color="${accent}" />
         </linearGradient>
         <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1200 260) rotate(143) scale(500 380)">
@@ -81,14 +81,14 @@ export const whatsappUrl =
 export const logoPlaceholder = createPlaceholderDataUri(
   'Paletes Monte Alto',
   'Logo placeholder para substituicao futura',
-  '#228B22',
+  '#2450C8',
 )
 
 // PLACEHOLDER: troque por /assets/hero-paletes-obra.jpg
 export const heroPlaceholder = createPlaceholderDataUri(
   'Fabrica e patio de paletes',
   'Imagem principal da operacao industrial',
-  '#D97706',
+  '#F3D31B',
 )
 
 // PLACEHOLDER: troque por /public/imagem-instucional.jpg caso substitua a foto institucional.
@@ -295,13 +295,13 @@ export const heroHighlights: Highlight[] = [
     title: 'Paletes retornáveis',
     description: 'Projetados para ciclos repetidos de movimentação e armazenagem.',
     icon: PackageCheck,
-    accent: 'from-amber-500/30 to-amber-100/0',
+    accent: 'from-yellow-400/30 to-yellow-100/0',
   },
   {
     title: 'Embalagens técnicas',
     description: 'Soluções sob medida para cargas especiais e operações críticas.',
     icon: Boxes,
-    accent: 'from-emerald-500/30 to-emerald-100/0',
+    accent: 'from-blue-500/30 to-blue-100/0',
   },
 ]
 

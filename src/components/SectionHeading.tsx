@@ -14,7 +14,7 @@ export function SectionHeading({
   theme = 'light',
 }: SectionHeadingProps) {
   const alignmentClass = align === 'center' ? 'mx-auto text-center' : 'text-left'
-  const eyebrowClass = theme === 'dark' ? 'text-emerald-400' : 'text-emerald-700'
+  const eyebrowClass = theme === 'dark' ? 'text-yellow-300' : 'text-[color:#0E2A88]'
   const titleClass = theme === 'dark' ? 'text-slate-100' : 'text-slate-900'
   const descriptionClass = theme === 'dark' ? 'text-slate-300' : 'text-slate-600'
 

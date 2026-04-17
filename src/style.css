@@ -4,20 +4,21 @@
 @theme {
   --font-sans: 'Manrope', sans-serif;
   --font-display: 'Sora', sans-serif;
-  --color-brand-wood: #8b4513;
-  --color-brand-green: #228b22;
-  --color-brand-accent: #d97706;
-  --color-brand-ink: #1f2937;
-  --color-brand-surface: #f8fafc;
+  --color-brand-blue: #0e2a88;
+  --color-brand-blue-soft: #2450c8;
+  --color-brand-yellow: #f3d31b;
+  --color-brand-yellow-soft: #fff5b6;
+  --color-brand-ink: #162340;
+  --color-brand-surface: #f4f8ff;
 }
 
 :root {
   font-family: var(--font-sans);
-  color: #1f2937;
+  color: var(--color-brand-ink);
   background:
-    radial-gradient(circle at top left, rgba(34, 139, 34, 0.12), transparent 24%),
-    radial-gradient(circle at top right, rgba(217, 119, 6, 0.18), transparent 28%),
-    #f8fafc;
+    radial-gradient(circle at top left, rgba(14, 42, 136, 0.14), transparent 24%),
+    radial-gradient(circle at top right, rgba(243, 211, 27, 0.2), transparent 30%),
+    var(--color-brand-surface);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -54,14 +55,14 @@ button {
 }
 
 ::selection {
-  background: rgba(217, 119, 6, 0.2);
-  color: #1f2937;
+  background: rgba(243, 211, 27, 0.35);
+  color: #10172d;
 }
 
 /* Banner responsivo: mobile usa banner-principal-mobile.jpg, desktop usa banner-principal.jpg */
 .hero-bg {
   background-image:
-    linear-gradient(180deg, rgba(17,24,39,0.82) 0%, rgba(31,41,55,0.72) 48%, rgba(36,50,71,0.78) 100%),
+    linear-gradient(180deg, rgba(8,18,56,0.84) 0%, rgba(12,38,109,0.74) 50%, rgba(22,45,112,0.78) 100%),
     url(/banner-principal-mobile.jpg);
   background-size: cover;
   background-position: center;
@@ -70,7 +71,7 @@ button {
 @media (min-width: 640px) {
   .hero-bg {
     background-image:
-      linear-gradient(180deg, rgba(17,24,39,0.82) 0%, rgba(31,41,55,0.72) 48%, rgba(36,50,71,0.78) 100%),
+      linear-gradient(180deg, rgba(8,18,56,0.84) 0%, rgba(12,38,109,0.74) 50%, rgba(22,45,112,0.78) 100%),
       url(/banner-principal.jpg);
   }
 }

@@ -58,7 +58,7 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
           </button>
 
           <div className="grid lg:grid-cols-[1.05fr_0.95fr]">
-            <div className="bg-stone-950 p-4 lg:p-6">
+            <div className="bg-[#07153d] p-4 lg:p-6">
               <div className="overflow-hidden rounded-lg border border-white/10 bg-slate-100">
                 <img
                   src={product.image}
@@ -70,7 +70,7 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
 
             <div className="flex flex-col gap-6 p-6 sm:p-8">
               <div>
-                <span className="inline-flex rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-amber-900">
+                <span className="inline-flex rounded-full bg-yellow-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-blue-900">
                   {product.badge}
                 </span>
                 <h3 className="mt-4 font-display text-3xl text-slate-900">{product.name}</h3>
@@ -115,7 +115,7 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
                     value={quickForm.name}
                     onChange={(event) => setQuickForm((current) => ({ ...current, name: event.target.value }))}
                     placeholder="Seu nome"
-                    className="rounded-lg border border-slate-200 px-4 py-3 text-sm outline-none transition focus:border-amber-700"
+                    className="rounded-lg border border-slate-200 px-4 py-3 text-sm outline-none transition focus:border-blue-700"
                   />
                   <input
                     required
@@ -124,20 +124,20 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
                       setQuickForm((current) => ({ ...current, company: event.target.value }))
                     }
                     placeholder="Empresa"
-                    className="rounded-lg border border-slate-200 px-4 py-3 text-sm outline-none transition focus:border-amber-700"
+                    className="rounded-lg border border-slate-200 px-4 py-3 text-sm outline-none transition focus:border-blue-700"
                   />
                   <input
                     required
                     value={quickForm.phone}
                     onChange={(event) => setQuickForm((current) => ({ ...current, phone: event.target.value }))}
                     placeholder="Telefone"
-                    className="rounded-lg border border-slate-200 px-4 py-3 text-sm outline-none transition focus:border-amber-700"
+                    className="rounded-lg border border-slate-200 px-4 py-3 text-sm outline-none transition focus:border-blue-700"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="mt-5 inline-flex w-full items-center justify-center rounded-lg bg-[linear-gradient(135deg,#8B4513,#D97706)] px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-amber-700/20"
+                  className="mt-5 inline-flex w-full items-center justify-center rounded-lg bg-[linear-gradient(135deg,#0E2A88,#2450C8)] px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-900/20"
                 >
                   Enviar interesse
                 </button>
@@ -148,7 +148,7 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
                   href={whatsappUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-2 font-semibold text-emerald-700"
+                  className="inline-flex items-center gap-2 font-semibold text-blue-700"
                 >
                   <Phone className="h-4 w-4" />
                   Falar no WhatsApp
