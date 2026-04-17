@@ -11,22 +11,22 @@ export function HeroSection() {
   return (
     <section
       id="inicio"
-      className="hero-bg relative isolate min-h-[calc(100svh-5rem)] overflow-hidden scroll-mt-28 px-4 pb-8 pt-20 sm:min-h-screen sm:px-6 sm:pb-20 sm:pt-28 lg:px-8 lg:pb-24 lg:pt-36"
+      className="hero-bg relative isolate min-h-[calc(100svh-5rem)] overflow-hidden scroll-mt-28 px-4 pb-8 pt-28 sm:min-h-screen sm:px-6 sm:pb-20 sm:pt-40 lg:px-8 lg:pb-24 lg:pt-44"
     >
       <div className="relative mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
         <motion.div
           initial={{ opacity: 0, y: 22 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.55, ease: 'easeOut' }}
-          className="relative z-10 flex min-h-[calc(100svh-10rem)] flex-col sm:min-h-0"
+          className="relative z-10"
         >
           <h1 className="mt-8 max-w-3xl font-display text-3xl leading-[1.05] tracking-[-0.03em] text-white sm:mt-20 sm:text-5xl sm:leading-[0.95] sm:tracking-[-0.04em] lg:mt-24 lg:text-7xl">
             {company.name}
           </h1>
-          <p className="mt-4 max-w-2xl text-base leading-7 text-slate-200 sm:mt-5 sm:text-lg sm:leading-8">{company.slogan}</p>
-          <p className="mt-3 max-w-2xl text-sm leading-7 text-slate-300 sm:mt-6 sm:text-base sm:leading-8">{company.description}</p>
+          <p className="mt-6 max-w-2xl text-base leading-7 text-slate-200 sm:mt-7 sm:text-lg sm:leading-8">{company.slogan}</p>
+          <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-300 sm:mt-5 sm:text-base sm:leading-8">{company.description}</p>
 
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-12 flex flex-col gap-3 sm:mt-14 sm:flex-row">
             <Link
               to="/#produtos"
               className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#F3D31B] px-6 py-3.5 text-sm font-semibold text-[#0E2A88] shadow-[0_18px_30px_rgba(243,211,27,0.34)] transition hover:-translate-y-0.5 hover:bg-[#e7c814]"
@@ -44,7 +44,7 @@ export function HeroSection() {
             </a>
           </div>
 
-          <div className="mt-auto grid grid-cols-3 gap-2 pt-6 sm:mt-10 sm:gap-4 sm:pt-0">
+          <div className="mt-14 grid grid-cols-3 gap-2 sm:mt-16 sm:gap-4">
             {floatingMetrics.map((metric) => (
               <div key={metric.label} className="rounded-md border border-white/10 bg-white/8 p-2 backdrop-blur sm:p-4">
                 <p className="text-[10px] uppercase tracking-[0.15em] text-slate-400 sm:text-xs sm:tracking-[0.2em]">{metric.label}</p>
