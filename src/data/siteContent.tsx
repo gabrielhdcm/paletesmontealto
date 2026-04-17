@@ -327,7 +327,7 @@ export const footerLinks: Array<{ title: string; items: Array<{ label: string; h
 ]
 
 export const mapEmbedUrl =
-  'https://www.google.com/maps?q=Rodovia%20SP%20305%20Km%2015,5%20In%C3%ADcio%20da%20estrada%20para%20Taiacu,%20Monte%20Alto%20%E2%80%93%20SP,%20CEP%2015910-000&output=embed'
+  'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29747.411575775423!2d-48.5316834256836!3d-21.254580799999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9441bd7a02aa1%3A0x2fb72c76f9739f9c!2sPaletes%20Monte%20Alto!5e0!3m2!1spt-BR!2sbr!4v1776433258344!5m2!1spt-BR!2sbr'
 
 export const footerNote: ReactNode = (
   <>
