@@ -89,7 +89,7 @@ export function Footer() {
         </div>
 
         <div className="mt-10 border-t border-white/10 pt-6 text-sm text-slate-500">
-          © GABRIEL HENRIQUE DA CRUZ MACHADO - WEB DEVELOPER. Todos os direitos reservados.
+          © PALETES MONTE ALTO LTDA. Todos os direitos reservados.
         </div>
       </div>
     </footer>
